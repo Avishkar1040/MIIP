@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Avishkar | Portfolio</title>
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    line-height: 1.6;
+    background: #000;
+    color: #f0f0f0;
+  }
+  header {
+    background: #fff;
+    color: #000;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+  }
+  nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #555;
+  }
+  .image {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image div {
+    font-size: 140px;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  #about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+  }
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255,255,255,0.1);
+  }
+  .project-card h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #aaa;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+  }
+  form input,
+  form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: #000;
+    color: #fff;
+  }
+  form button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  form button:hover {
+    background: #ccc;
+  }
+  footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .skill a {
+    background: #333;
+    color: white;
+    padding: 0.6rem 1.1rem;
+    border-radius: 18px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+    transition: transform 0.2s, background 0.3s;
+  }
+  .skill a:hover {
+    transform: scale(1.05);
+    background: #555;
+  }
+ </style>
+</head>
+<body>
+ <header>
+   <h1>Avishkar</h1>
+   <nav>
+     <ul>
+       <li><a href="#about">About</a></li>
+       <li><a href="#skills">Skills</a></li>
+       <li><a href="#projects">Projects</a></li>
+       <li><a href="#contact">Contact</a></li>
+     </ul>
+   </nav>
+ </header>
+ <div class="image">
+   <div>A</div>
+ </div>
+ <section id="about">
+   <h2>About Me</h2>
+   <p>Hello! I’m Avishkar, born on 19 JAN 2007, currently pursuing 
+   my 3rd Year Diploma in Computer Engineering at Y.B. Patil Polytechnic, Akurdi, Pune. I’m 
+   passionate about exploring the world of technology and committed to continuous 
+   learning and innovation.</p>
+ </section>
+ <section id="skills">
+   <h2>My Skills</h2>
+   <div class="skills">
+     <div class="skill"><a href="https://www.w3schools.com/java/" target="_blank">Java</a></div>
+     <div class="skill"><a href="https://www.w3schools.com/python/" target="_blank">Python</a></div>
+     <div class="skill"><a href="https://www.w3schools.com/c/" target="_blank">C Programming</a></div>
+     <div class="skill"><a href="https://www.w3schools.com/html/" target="_blank">HTML & CSS</a></div>
+     <div class="skill"><a href="https://www.w3schools.com/git/" target="_blank">GitHub</a></div>
+   </div>
+ </section>
+ <section id="projects">
+   <h2>My Projects</h2>
+   <div class="project-list">
+     <div class="project-card">
+       <h3>Library Management System</h3>
+       <p>Developed using Java. A desktop application to manage library operations like 
+       issue, return, and inventory control.</p>
+     </div>
+     <div class="project-card">
+       <h3>School Management System</h3>
+       <p>Created with Python. It helps in managing student records, attendance, and 
+       grades efficiently.</p>
+     </div>
+     <div class="project-card">
+       <h3>Airline Management System</h3>
+       <p>Written in C. It handles flight bookings, passenger records, and check-in 
+       processes.</p>
+     </div>
+   </div>
+ </section>
+ <section id="contact">
+   <h2>Contact Me</h2>
+   <form>
+     <input type="text" placeholder="Your Name" required />
+     <input type="email" placeholder="Your Email" required />
+     <textarea placeholder="Your Message..." rows="5" required></textarea>
+     <button type="submit">Send Message</button>
+   </form>
+ </section>
+ <footer>
+   <p>© 2025 Avishkar. All rights reserved.</p>
+ </footer>
+</body>
+</html>
