@@ -9,19 +9,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
   }
   body {
+    background: #f4f6f9;
+    color: #2c3e50;
     line-height: 1.6;
-    background: #000;
-    color: #f0f0f0;
   }
   header {
-    background: #fff;
-    color: #000;
+    background: #406285;
+    color: #ecf0f1;
     padding: 1.5rem 0;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
   nav ul {
     display: flex;
@@ -30,14 +30,14 @@
     margin-top: 1rem;
   }
   nav a {
-    color: #000;
+    color: #ecf0f1;
     text-decoration: none;
     margin: 0 1rem;
     font-weight: bold;
     transition: color 0.3s;
   }
   nav a:hover {
-    color: #555;
+    color: #3498db;
   }
   .image {
     width: 100%;
@@ -45,18 +45,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
   }
   .image div {
     font-size: 140px;
     font-weight: bold;
-    color: #000;
-    background: #fff;
+    color: #dcd9d9;
+    background: #2c3e50;
     width: 180px;
     height: 180px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 20px rgba(44, 62, 80, 0.5);
   }
   section {
     padding: 3rem 2rem;
@@ -66,14 +68,14 @@
   h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: #2c3e50;
   }
   #about p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: auto;
     text-align: center;
-    color: #ccc;
+    color: #34495e;
   }
   .project-list {
     display: grid;
@@ -81,47 +83,47 @@
     gap: 1.5rem;
   }
   .project-card {
-    background: #1a1a1a;
-    border-radius: 10px;
+    background: #ffffff;
+    border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.2s, box-shadow 0.2s;
   }
   .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(255,255,255,0.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   }
   .project-card h3 {
-    color: #ffffff;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
   }
   .project-card p {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #aaa;
+    color: #555;
   }
   form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: auto;
-    background: #1a1a1a;
+    background: #ffffff;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   form input,
   form textarea {
     margin-bottom: 1rem;
     padding: 0.8rem;
-    border: 1px solid #555;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    background: #000;
-    color: #fff;
+    background: #f9f9f9;
+    color: #2c3e50;
   }
   form button {
-    background: #fff;
-    color: #000;
+    background: #3498db;
+    color: #ffffff;
     border: none;
     padding: 0.9rem;
     border-radius: 6px;
@@ -130,11 +132,11 @@
     transition: background 0.3s;
   }
   form button:hover {
-    background: #ccc;
+    background: #2980b9;
   }
   footer {
-    background: #111;
-    color: #aaa;
+    background: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
@@ -152,18 +154,18 @@
     flex-wrap: wrap;
   }
   .skill a {
-    background: #333;
+    background: #3498db;
     color: white;
     padding: 0.6rem 1.1rem;
     border-radius: 18px;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     transition: transform 0.2s, background 0.3s;
   }
   .skill a:hover {
     transform: scale(1.05);
-    background: #555;
+    background: #2980b9;
   }
  </style>
 </head>
@@ -184,7 +186,7 @@
  </div>
  <section id="about">
    <h2>About Me</h2>
-   <p>Hello! I’m Avishkar, born on 19 JAN 2007, currently pursuing 
+   <p>Hello! I Avishkar, born on 19 JAN 2007, currently pursuing 
    my 3rd Year Diploma in Computer Engineering at Y.B. Patil Polytechnic, Akurdi, Pune. I’m 
    passionate about exploring the world of technology and committed to continuous 
    learning and innovation.</p>
